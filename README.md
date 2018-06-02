@@ -1,2 +1,3 @@
-# AS_CheminPOSIX
-Bibliothèque de manipulation de chemin POSIX en AppleScript
+# AS_CheminPOSIXLib
+
+Bibliothèque de manipulation de chemin POSIX en AppleScript.
