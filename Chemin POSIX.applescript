@@ -130,6 +130,29 @@ on sansExtension(nomComplet)
 	
 end sansExtension
 
+
+(*
+Nom			: POSIXVersAlias 
+Description	: Renvoi un alias ˆ partir d'un chemin POSIX
+cheminPOSIX : cha”ne contenant un chemin complet POSIX sur un fichier/dossier
+retour		: un alias vers le fichier/dossier
+*)
+on POSIXVersAlias(cheminPOSIX)
+	return (POSIX file cheminPOSIX) as alias
+end POSIXVersAlias
+
+
+(*
+Nom       		: aliasVersPOSIX 
+Description 	: Renvoi un chemin POSIX ˆ partir d'un alias
+aliasElement	: alias vers un fichier/dossier
+retour 		: chaine contenant un chemin POSIX vers le fichier/dossier
+*)
+on aliasVersPOSIX(aliasElement)
+	return POSIX path of aliasElement
+end aliasVersPOSIX
+
+
 -----------------------------------------------------------------------------------------------------------
 --                                                     TESTS
 -----------------------------------------------------------------------------------------------------------
@@ -155,6 +178,11 @@ tell script "Chemin POSIX"
 	log "Extension : " & its extension(cheminComplet)
 	
 	log "Chemin et nom : " & its sansExtension(cheminComplet)
+	
+	log "alias du dossier /Users/bruno/Desktop/ : " & its POSIXVersAlias("/Users/bruno/Desktop/")
+	
+	log "Chemin POSIX du dossier Bureau : " & its aliasVersPOSIX(path to desktop of home)
+	
 end tell
 *)
 

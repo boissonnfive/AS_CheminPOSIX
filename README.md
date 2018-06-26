@@ -10,12 +10,13 @@ Nombreuses fonctions de traitement des sur les chemin POSIX.
 
 ## Fonctions
 
-- __sansExtension__ : Renvoi le chemin et le nom sans l'extension à partir d'un chemin complet POSIX.
-- __extension__ : Renvoi l'extension à partir d'un chemin complet POSIX.
-- __nom__ : Renvoi le nom (avec l'extension) à partir d'un chemin complet POSIX.
+- __sansExtension__    : Renvoi le chemin et le nom sans l'extension à partir d'un chemin complet POSIX.
+- __extension__        : Renvoi l'extension à partir d'un chemin complet POSIX.
+- __nom__              : Renvoi le nom (avec l'extension) à partir d'un chemin complet POSIX.
 - __nomSansExtension__ : Renvoi le nom (sans l'extension) à partir d'un chemin complet POSIX.
-- __chemin__ : Renvoi le chemin à partir d'un chemin complet POSIX.
-
+- __chemin__           : Renvoi le chemin à partir d'un chemin complet POSIX.
+- __POSIXVersAlias__   : Renvoi un alias à partir d'un chemin POSIX
+- __aliasVersPOSIX__   : Renvoi un chemin POSIX à partir d'un alias
 
 ## Installer
 
